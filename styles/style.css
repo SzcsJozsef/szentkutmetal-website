@@ -13,7 +13,7 @@ html {
 
 body {
 
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif !important;
 }
 
 .content-wrapper {
@@ -50,6 +50,7 @@ header {
     majd ugyanolyan mertekben novekednek */
     flex-basis: 0;
     flex-grow: 1;
+
 
     display: flex;
     color: white;
@@ -91,12 +92,13 @@ header {
     background-color: var(--header-navbar-bg-color);
     display: flex;
     justify-content: space-between;
-    
+
     z-index: 1000;
 }
 
 
 .navbar-logo {
+
     width: fit-content;
     height: 100%;
     padding-left: 30px;
@@ -353,6 +355,21 @@ footer p {
 /*RESPONSIVE DESIGN*/
 /*---------------------------------*/
 
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+
+    header{
+        position: relative;
+    }
+    .mobile-nav {
+        position: relative !important;
+        top: 20px !important;
+        width: calc(100% - 200px) !important;
+    }
+}
+
+
+
 @media only screen and (max-width: 900px) {
 
     .content-wrapper {
@@ -407,15 +424,14 @@ footer p {
 
     .navbar-links-container {
         display: flex;
-        margin-left: auto;
+        /* margin-left: auto; */
     }
 
     .navbar-links-list {
         display: none;
     }
 
-    
-    .navbar-sm{
+    .navbar-sm {
         display: none;
     }
 
@@ -456,8 +472,8 @@ footer p {
         border-radius: 20px;
         border: 2px solid rgba(231, 154, 38, 0.3);
         box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.8);
-        
-        
+
+
         background: rgba(49, 49, 49, 0.4);
         backdrop-filter: blur(15px);
         display: none;
@@ -465,10 +481,10 @@ footer p {
         flex-direction: column;
         row-gap: 20px;
         z-index: 999;
-        
+
     }
 
-    .mobile-nav.open{
+    .mobile-nav.open {
         display: flex;
     }
 
@@ -480,7 +496,7 @@ footer p {
         align-items: center;
     }
 
-    .mobile-nav__menu li a{
+    .mobile-nav__menu li a {
         cursor: pointer;
     }
 
@@ -508,15 +524,15 @@ footer p {
         fill: white;
     }
 
-    #overlay{
+    #overlay {
         position: fixed;
-        inset:0;
+        inset: 0;
         background-color: rgba(49, 49, 49, .9);
         z-index: 2;
         display: none;
     }
 
-    .mobile-nav.open ~ #overlay{
+    .mobile-nav.open~#overlay {
         display: block;
     }
 
