@@ -355,6 +355,7 @@ footer p {
 @media only screen and (max-width: 900px) {
 
     .content-wrapper {
+        display: flex;
         width: calc(100% - 20px);
     }
 
