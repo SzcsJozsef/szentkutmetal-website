@@ -362,7 +362,7 @@ footer p {
         position: relative;
     }
 
-    .mobile-nav {
+    .mobile-nav.open {
         position: absolute !important;
         top: 160px !important;
         width: calc(100% - 200px) !important;
