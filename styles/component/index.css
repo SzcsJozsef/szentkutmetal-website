@@ -236,33 +236,39 @@
     /*---- HERO SECTION ------------*/
 
     .index-hero {
-        padding: 30px;
+        padding: 40px;
         display: flex;
         justify-content: flex-end;
     }
 
-   
+
 
 
     .index-hero h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 3.2rem;
+        font-weight: 400;
         z-index: 1;
     }
 
     .index-hero h3::before {
-        display: none;
+        height: .2rem;
+        width: 30px;
     }
 
     .index-hero h3::after {
-        display: none;
+        height: .2rem;
+        width: 30px;
     }
 
     .index-hero h1 {
+        display: inline-flex;
+        width: 310px;
         font-size: 2.5rem;
         line-height: 3rem;
+        text-align: center;
     }
-    
+
 
     .index-hero h2 {
         font-size: 2.5rem;
@@ -270,7 +276,12 @@
     }
 
 
-    
+    .index-hero h2:nth-child(3) {
+        padding-bottom: 30px;
+    }
+
+
+
 
 
     .index-hero p {
@@ -298,55 +309,55 @@
         width: 100%;
         padding: 30px 0;
     }
-    
+
     .index-main section {
         padding: 0 0;
     }
-    
+
     .index-main h2 {
-        
+
         font-size: 2.5rem;
         line-height: 3rem;
         padding: 0;
     }
-    
+
     .index-main h3 {
         font-size: 2rem;
         line-height: 3.2rem;
-        font-weight:500;
+        font-weight: 500;
         margin: 40px 0 20px;
 
     }
-    
-    
+
+
     .index-main h3::before {
-    
-        
+
+
         height: .2rem;
         width: 40px;
-        
+
     }
-    
+
     .index-main h3::after {
-    
-        
+
+
         height: .2rem;
         width: 40px;
-        
+
     }
-    
+
     .index-main p {
         font-size: 1.4rem;
         line-height: 2rem;
     }
-    
-    
+
+
     .index-main-subtitle {
         display: flex;
         justify-content: center;
     }
-    
-    
+
+
     .index-main .box-container {
         display: flex;
         justify-content: center;
@@ -354,7 +365,7 @@
         row-gap: 30px;
         padding: 20px;
     }
-    
+
     .index-main .box {
         width: 340px;
         height: 300px;
@@ -362,15 +373,15 @@
         padding: 30px;
         box-shadow: 0px 3px 20px rgba(0, 33, 71, 0.05);
     }
-    
+
     .index-main .box .img-box {
         height: 80px;
     }
-    
+
     .index-main .box .img-box img {
         height: 80px;
     }
-    
+
     .index-main .box h4 {
         color: black;
         font-size: 2rem;
@@ -378,13 +389,13 @@
         text-align: center;
         padding: 20px 0;
     }
-    
-    
+
+
     .index-main .box i {
         padding: 15px 0;
         font-size: 50px;
     }
-    
+
 
 
 
