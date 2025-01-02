@@ -339,7 +339,9 @@ footer p {
 }
 
 
-
+.mobile-nav {
+    display: none;
+}
 
 
 
