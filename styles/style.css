@@ -413,6 +413,10 @@ footer p {
         display: none;
     }
 
+    
+    .navbar-sm{
+        display: none;
+    }
 
 
     /*----------------------*/
