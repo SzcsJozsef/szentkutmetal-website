@@ -76,6 +76,8 @@ header {
 
 .header-top-brand-logo {
     display: flex;
+    justify-content: center;
+    flex-basis: 300px;
 }
 
 .header-top-brand-logo img {
