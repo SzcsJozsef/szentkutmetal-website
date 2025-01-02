@@ -358,12 +358,13 @@ footer p {
 
 @media only screen and (max-width: 900px) and (orientation: landscape) {
 
-    header{
+    header {
         position: relative;
     }
+
     .mobile-nav {
-        position: relative !important;
-        top: 20px !important;
+        position: absolute !important;
+        top: 160px !important;
         width: calc(100% - 200px) !important;
     }
 }
