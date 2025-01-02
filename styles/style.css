@@ -89,15 +89,14 @@ header {
     background-color: var(--header-navbar-bg-color);
     display: flex;
     justify-content: space-between;
-    /* position: sticky;
-    top: 0; */
+    
     z-index: 1000;
 }
 
 
 .navbar-logo {
-    /* width: fit-content;
-    height: 100%; */
+    width: fit-content;
+    height: 100%;
     padding-left: 30px;
     flex-shrink: 0;
 }
