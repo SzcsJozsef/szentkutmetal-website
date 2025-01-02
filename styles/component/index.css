@@ -3,7 +3,7 @@
     /*kiszámolom mekkora a magassaga a viewportnak
     ha nem lenne benne maga a navbar*/
     /*60px a magassaga a headernek*/
-    height: calc(100vh - var(--header-navbar-height) - var(--header-top-height));
+    /* height: calc(100vh - var(--header-navbar-height) - var(--header-top-height)); */
     /* margin-top: var(--navbar-height); */
     background-color: var(--header-navbar-bg-color);
     background-image: url(../../images/hero_section/hero-bg.jpg);
@@ -14,7 +14,7 @@
 
     color: white;
 
-    padding-top: 45px;
+    padding: 45px 0;
 }
 
 .index-hero-flex {
@@ -236,7 +236,7 @@
     /*---- HERO SECTION ------------*/
 
     .index-hero {
-        padding-top: 20px;
+        padding: 30px;
         display: flex;
         justify-content: flex-end;
     }
