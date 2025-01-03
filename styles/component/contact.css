@@ -196,13 +196,14 @@
 }
 
 .contact-main .box .sm-container a{
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .contact-main .box .sm-container a svg {
-    width: 64px;
-    height: 64px;
-    font-weight: 600;
+    width: 60px;
+    height: 60px;
+
 }
 
 .contact-main .box .sm-container a svg path{
@@ -210,6 +211,11 @@
     stroke-width: 1px;
 }
 
+
+.contact-main .box .sm-container a:hover{
+    background-color: rgba(231, 154, 38, 0.7);
+    transform: scale(1.2);
+}
 
 
 
