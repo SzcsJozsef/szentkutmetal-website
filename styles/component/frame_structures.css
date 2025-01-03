@@ -144,8 +144,19 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 80px;
+    column-gap: 120px;
     padding: 20px;
+}
+
+.frame_structures-main .box-container a{
+    display: flex;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.frame_structures-main .box-container a:hover .details-inner img{
+    background-color: rgba(231, 154, 38, 0.7);
+    transform: scale(1.2);    
 }
 
 .frame_structures-main .box {
@@ -172,6 +183,27 @@
     text-align: center;
     padding: 20px 0;
 }
+
+
+
+.frame_structures-main .box .details-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frame_structures-main .box .right-arrow{
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.right-arrow img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 
 .frame_structures-main .box p {
     font-size: 1.6rem;
