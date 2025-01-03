@@ -80,18 +80,18 @@
     background-color: var(--golden-color);
 }
 
-
+/* 
 .index-hero p {
     font-size: 1.6rem;
     line-height: 2.5rem;
     margin-top: 30px;
-}
+} */
 
 .index-hero-btn-wrapper {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    column-gap: 40px;
+    column-gap: 50px;
 }
 
 .index-hero-btn-wrapper a {
@@ -209,9 +209,17 @@
 .index-main .box h4 {
     color: black;
     font-size: 2rem;
+    font-weight: 500;
     line-height: 2.8rem;
     text-align: center;
     padding: 20px 0;
+}
+
+
+.frame_structures-main .box p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    line-height: 2.5rem;
 }
 
 
@@ -245,7 +253,7 @@
 
 
     .index-hero h3 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         line-height: 3.2rem;
         font-weight: 400;
         z-index: 1;
@@ -277,22 +285,22 @@
 
 
     .index-hero h2:nth-child(3) {
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 
 
 
 
 
-    .index-hero p {
+   /*  .index-hero p {
         font-size: 1.4rem;
         line-height: 2.0rem;
         margin-top: 30px;
-    }
+    } */
 
     .index-hero-btn-wrapper {
-        margin-top: 20px;
-        column-gap: 20px;
+        margin-top: 30px;
+        column-gap: 30px;
     }
 
     .index-hero-btn-wrapper a {
@@ -384,12 +392,14 @@
 
     .index-main .box h4 {
         color: black;
-        font-size: 2rem;
+        font-size: 2.6rem;
         line-height: 2.8rem;
         text-align: center;
         padding: 20px 0;
     }
-
+    .index-main .box p{
+        line-height: 2.5rem;
+    }
 
     .index-main .box i {
         padding: 15px 0;
