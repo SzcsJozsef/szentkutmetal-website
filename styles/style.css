@@ -357,7 +357,7 @@ footer p {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 898;
 }
 
 .go-to-top img{
@@ -552,7 +552,7 @@ footer p {
         position: fixed;
         inset: 0;
         background-color: rgba(49, 49, 49, .9);
-        z-index: 2;
+        z-index: 899;
         display: none;
     }
 
