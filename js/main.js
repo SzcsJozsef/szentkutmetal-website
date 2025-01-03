@@ -4,6 +4,8 @@ const xIcon = document.getElementById("x-icon");
 const mobileNav = document.querySelector(".mobile-nav");
 const clickOverLay = document.getElementById("overlay");
 
+const goTop = document.querySelector(".go-to-top");
+
 const hidden = "hidden";
 const display = "displayed";
 const navOpen = "open";
@@ -23,6 +25,8 @@ mobileBtn.onclick = function () {
 
         mobileNav.classList.add(navOpen);
 
+        
+
         isMobileNavbarOpen = true;
 
     } else {
@@ -33,6 +37,8 @@ mobileBtn.onclick = function () {
         burgerIcon.classList.remove(hidden);
 
         mobileNav.classList.remove(navOpen);
+
+        
 
         isMobileNavbarOpen = false;
     }
@@ -51,3 +57,22 @@ clickOverLay.onclick = function () {
     isMobileNavbarOpen = false;
 
 }
+
+window.addEventListener("scroll", checkHeight);
+
+function checkHeight(){
+    if(window.scrollY > 100){
+        goTop.style.display = "flex";
+    }
+    else{
+        goTop.style.display = "none";
+    }
+}
+
+
+goTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});

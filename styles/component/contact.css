@@ -1,23 +1,17 @@
-.index-hero {
+.contact-banner {
     width: 100%;
-    /*kiszámolom mekkora a magassaga a viewportnak
-    ha nem lenne benne maga a navbar*/
-    /*60px a magassaga a headernek*/
-    /* height: calc(100vh - var(--header-navbar-height) - var(--header-top-height)); */
-    /* margin-top: var(--navbar-height); */
     background-color: var(--header-navbar-bg-color);
-    background-image: url(../../images/hero_section/hero-bg.jpg);
-    background-blend-mode: multiply;
+    background-image: url(../../images/banner/dark-grey-banner.jpg);
     background-size: cover;
-    background-position: 0 0;
     background-repeat: no-repeat;
+    background-position: center;
 
     color: white;
 
     padding: 45px 0;
 }
 
-.index-hero-flex {
+.contact-banner-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,114 +21,78 @@
 
 
 
-.index-hero h1 {
-    margin-top: 20px;
-    font-size: 4.5rem;
+.contact-banner h1 {
+    /* margin-top: 20px; */
+    font-size: 5.5rem;
     line-height: 5rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
 }
 
-.index-hero h2 {
-    margin-top: 20px;
-    font-size: 4.5rem;
+.contact-banner ul {
+    color: var(--golden-color);
+    font-size: 3rem;
     line-height: 5rem;
+    font-weight: 500;
+    padding: 2rem 0;
+    display: flex;
+}
+
+.contact-banner ul a{
+    cursor: pointer;
 }
 
 
-.index-hero h2:nth-child(3) {
-    color: var(--golden-color);
-}
-
-.index-hero h3 {
-    color: var(--golden-color);
-    font-size: 2.2rem;
-    line-height: 3.2rem;
-    display: inline;
-    /* font-weight: bold; */
-    position: relative;
-    z-index: 1;
-    margin: 0 auto;
+.contact-banner ul .current::before {
+    content: "/";
+    padding: 0 10px;
+    
 }
 
 
-.index-hero h3::before {
 
-    content: "";
-    top: 50%;
-    left: 0;
-    transform: translateX(calc(-100% - 5px));
-    height: 2px;
-    width: 70px;
-    position: absolute;
-    background-color: var(--golden-color);
-}
-
-.index-hero h3::after {
-
-    content: "";
-    top: 50%;
-    right: 0;
-    transform: translateX(calc(100% + 5px));
-    height: 2px;
-    width: 70px;
-    position: absolute;
-    background-color: var(--golden-color);
-}
-
-/* 
-.index-hero p {
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    margin-top: 30px;
-} */
-
-.index-hero-btn-wrapper {
-    margin-top: 30px;
+.contact-banner-btn-wrapper {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    column-gap: 50px;
+    
 }
 
-.index-hero-btn-wrapper a {
+.contact-banner-btn-wrapper a {
     display: inline-flex;
+    justify-content: center;
     height: 50px;
     align-items: center;
-    padding: 0 5px;
-    background-color: rgba(231, 154, 38, .3);
+    padding: 0 20px;
+    background-color: rgba(231, 154, 38, .4);
     border-radius: 5px;
     border: 1px solid rgba(231, 154, 38, .6);
 
     color: white;
     font-size: 16px;
+    font-weight: 400;
     text-transform: uppercase;
     cursor: pointer;
 }
 
-.index-hero-btn-wrapper a:hover {
+.contact-banner-btn-wrapper a:hover {
     border-radius: 5px;
     background-color: var(--golden-color);
 }
 
 
-.index-main {
+.contact-main {
     width: 100%;
-    padding: 100px 0;
     background-color: #fff;
 }
 
-.index-main section {
+.contact-main section {
     padding: 30px 0;
 }
 
-.index-main h2 {
-    font-weight: bold;
-    color: var(--golden-color);
-    font-size: 4.5rem;
-    line-height: 5.5rem;
-    text-align: center;
-    padding-bottom: 20px;
-}
 
-.index-main h3 {
+
+.contact-main h2 {
     color: black;
     font-size: 2.4rem;
     line-height: 3.2rem;
@@ -146,7 +104,7 @@
 }
 
 
-.index-main h3::before {
+.contact-main h2::before {
 
     content: "";
     top: 50%;
@@ -158,7 +116,7 @@
     background-color: black;
 }
 
-.index-main h3::after {
+.contact-main h2::after {
 
     content: "";
     top: 50%;
@@ -170,27 +128,28 @@
     background-color: black;
 }
 
-.index-main p {
+.contact-main p {
     font-size: 1.6rem;
     line-height: 2rem;
 }
 
 
-.index-main-subtitle {
+.contact-main-subtitle {
     display: flex;
     justify-content: center;
 }
 
 
-.index-main .box-container {
+.contact-main .box-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 80px;
     padding: 20px;
+    row-gap: 80px;
 }
 
-.index-main .box {
+.contact-main .box {
     width: 340px;
     height: 300px;
     text-align: center;
@@ -198,36 +157,58 @@
     box-shadow: 0px 3px 20px rgba(0, 33, 71, 0.05);
 }
 
-.index-main .box .img-box {
+.contact-main .box .img-box {
     height: 80px;
 }
 
-.index-main .box .img-box img {
+.contact-main .box .img-box img {
     height: 80px;
 }
 
-.index-main .box h4 {
+.contact-main .box h4 {
     color: black;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 500;
     line-height: 2.8rem;
     text-align: center;
     padding: 20px 0;
 }
 
-
-.frame_structures-main .box p {
+.contact-main .box p {
     font-size: 1.6rem;
     line-height: 2rem;
     line-height: 2.5rem;
 }
 
 
-.index-main .box i {
+
+.contact-main .box i {
     padding: 15px 0;
     font-size: 50px;
 }
 
+
+.contact-main .box .sm-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.contact-main .box .sm-container a{
+    cursor: pointer;
+}
+
+.contact-main .box .sm-container a svg {
+    width: 64px;
+    height: 64px;
+    font-weight: 600;
+}
+
+.contact-main .box .sm-container a svg path{
+    stroke: black;
+    stroke-width: 1px;
+}
 
 
 
@@ -243,7 +224,7 @@
     /*------------------------------*/
     /*---- HERO SECTION ------------*/
 
-    .index-hero {
+    .contact-banner {
         padding: 40px;
         display: flex;
         justify-content: flex-end;
@@ -251,59 +232,31 @@
 
 
 
-
-    .index-hero h3 {
-        font-size: 1.7rem;
-        line-height: 3.2rem;
-        font-weight: 400;
-        z-index: 1;
-    }
-
-    .index-hero h3::before {
-        height: .2rem;
-        width: 30px;
-    }
-
-    .index-hero h3::after {
-        height: .2rem;
-        width: 30px;
-    }
-
-    .index-hero h1 {
+    .contact-banner h1 {
         display: inline-flex;
+        justify-content: center;
         width: 310px;
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: 4rem;
+        line-height: 4rem;
         text-align: center;
     }
 
 
-    .index-hero h2 {
-        font-size: 2.5rem;
-        line-height: 3rem;
-    }
-
-
-    .index-hero h2:nth-child(3) {
-        padding-bottom: 20px;
+    .contact-banner ul {
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
 
 
 
 
 
-   /*  .index-hero p {
-        font-size: 1.4rem;
-        line-height: 2.0rem;
-        margin-top: 30px;
-    } */
-
-    .index-hero-btn-wrapper {
-        margin-top: 30px;
-        column-gap: 30px;
+    .contact-banner-btn-wrapper {
+        margin-top: 20px;
+        column-gap: 20px;
     }
 
-    .index-hero-btn-wrapper a {
+    .contact-banner-btn-wrapper a {
         height: 45px;
         font-size: 1.4rem;
     }
@@ -313,23 +266,23 @@
     /*---- MAIN SECTION ------------*/
 
 
-    .index-main {
+    .contact-main {
         width: 100%;
         padding: 30px 0;
     }
 
-    .index-main section {
+    .contact-main section {
         padding: 0 0;
     }
 
-    .index-main h2 {
+    .contact-main h2 {
 
         font-size: 2.5rem;
         line-height: 3rem;
         padding: 0;
     }
 
-    .index-main h3 {
+    .contact-main h3 {
         font-size: 2rem;
         line-height: 3.2rem;
         font-weight: 500;
@@ -338,7 +291,7 @@
     }
 
 
-    .index-main h3::before {
+    .contact-main h3::before {
 
 
         height: .2rem;
@@ -346,7 +299,7 @@
 
     }
 
-    .index-main h3::after {
+    .contact-main h3::after {
 
 
         height: .2rem;
@@ -354,19 +307,19 @@
 
     }
 
-    .index-main p {
+    .contact-main p {
         font-size: 1.4rem;
         line-height: 2rem;
     }
 
 
-    .index-main-subtitle {
+    .contact-main-subtitle {
         display: flex;
         justify-content: center;
     }
 
 
-    .index-main .box-container {
+    .contact-main .box-container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -374,7 +327,7 @@
         padding: 20px;
     }
 
-    .index-main .box {
+    .contact-main .box {
         width: 340px;
         height: 300px;
         text-align: center;
@@ -382,31 +335,35 @@
         box-shadow: 0px 3px 20px rgba(0, 33, 71, 0.05);
     }
 
-    .index-main .box .img-box {
+    .contact-main .box .img-box {
         height: 80px;
     }
 
-    .index-main .box .img-box img {
+    .contact-main .box .img-box img {
         height: 80px;
     }
 
-    .index-main .box h4 {
+    .contact-main .box h4 {
         color: black;
         font-size: 2.6rem;
         line-height: 2.8rem;
         text-align: center;
         padding: 20px 0;
     }
-    .index-main .box p{
+
+    .contact-main .box p{
         line-height: 2.5rem;
     }
 
-    .index-main .box i {
+
+    .contact-main .box i {
         padding: 15px 0;
         font-size: 50px;
     }
 
 
+    
+    
 
 
 }
