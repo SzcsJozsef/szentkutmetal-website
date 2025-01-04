@@ -103,7 +103,7 @@
                 <li><a href="index.html" class="mobile-nav__link">Home</a></li>
                 <li><a href="about.html" class="mobile-nav__link">Rólunk</a></li>
                 <li><a href="frame_structures.html" class="mobile-nav__link">Csarnokok</a></li>
-                <li><a href="references.htmls" class="mobile-nav__link">Referenciák</a></li>
+                <li><a href="references.html" class="mobile-nav__link">Referenciák</a></li>
                 <li><a href="contact.html" class="mobile-nav__link">Kapcsolat</a></li>
             </ul>
         </nav>
@@ -140,7 +140,7 @@
 
     <section class="references-banner">
         <div class="content-wrapper references-banner-flex">
-            
+
             <h1>Referenciák</h1>
 
             <ul>
@@ -160,9 +160,21 @@
                 <div class="references-main-subtitle">
                     <h2 class="title">Fotók</h2>
                 </div>
-                
+
+                <div class="gallery">
+                    <div class="thumbnail-container" id="thumbnail-container">
+                        
+                    </div>
+
+                    <div class="modal" id="image-modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="modal-image" alt="Nagyitott kep">
+                    </div>
+                </div>
+
             </section>
-            
+
+
 
         </div>
 
@@ -195,7 +207,7 @@
                         <p>+36-20-629-4303, +36-20-244-2959</p>
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
@@ -214,7 +226,7 @@
         <div class="footer-copyright">Copyright&copy; - Minden jog fenntartva!</div>
 
     </footer>
-
+    <script src="js/gallery_thumbnail.js"></script>
     <script src="js/main.js" defer></script>
 </body>
 
