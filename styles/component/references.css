@@ -38,7 +38,7 @@
     display: flex;
 }
 
-.references-banner ul a{
+.references-banner ul a {
     cursor: pointer;
 }
 
@@ -46,7 +46,7 @@
 .references-banner ul .current::before {
     content: "/";
     padding: 0 10px;
-    
+
 }
 
 
@@ -55,7 +55,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .references-banner-btn-wrapper a {
@@ -87,9 +87,16 @@
 }
 
 .references-main section {
+    width: 100%;
     padding: 30px 0;
 }
 
+
+
+.references-main-subtitle{
+    display: flex;
+    justify-content: center;
+}
 
 
 .references-main h2 {
@@ -134,14 +141,100 @@
 }
 
 
+/*--------------------------------*/
 
 
+.references-main .gallery {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.thumbnail-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.thumbnail:hover{
+    transform: scale(1.05);
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content{
+    position: relative;
+    top: 35%;
+
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.close{
+
+    display: grid;
+    border-radius: 50%;
+    place-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(127, 0, 0, 0.7);
+
+    position: absolute;
+    top: 25%;
+    right: 20px;
+    color: #f1f1f1;
+    font-size: 40px;
+    
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 300ms ease;
+}
+
+.close:hover{
+    color: #bbb;
+}
 
 
 
 /*---------------------------------*/
 /*RESPONSIVE DESIGN*/
 /*---------------------------------*/
+/* 
+@media screen and (max-width: 600px) {
+    .thumbnail-container{
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    
+    }
+    .thumbnail{
+        height: 100px;
+    }    
+}
+ */
+
 
 @media only screen and (max-width: 900px) {
 
