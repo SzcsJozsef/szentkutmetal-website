@@ -4,6 +4,7 @@ const thumnailContainer = document.getElementById("thumbnail-container");
 const modal = document.getElementById("image-modal");
 const modalImg = document.getElementById("modal-image");
 const closeBtn = document.querySelector(".close");
+let modalText = document.getElementById("modal-text");
 
 const images = [
     { thumb: "gallery/accessories-9241057_1280_thumbnail.jpg", full: "gallery/accessories-9241057_1280.jpg", alt: "csarnok" },
@@ -44,11 +45,14 @@ closeBtn.onclick = () => {
     modal.style.display = "none";
 };
 
-modal.onclick = () => {
+window.onclick = (event) => {
 
-    modal.style.display = "none";
+    modalText.innerHTML = event.target.id;
 
 };
+
+
+
 
 
 
