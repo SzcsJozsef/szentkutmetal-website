@@ -48,7 +48,7 @@ closeBtn.onclick = () => {
 window.onclick = (event) => {
 
 
-    modalText.innerHTML = "id: " +  event.target.id;
+    modalText.innerHTML = "id: " +  event.target;
 
 };
 
