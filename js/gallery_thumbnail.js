@@ -54,6 +54,7 @@ closeBtn.onclick = () => {
 
 window.addEventListener("click",
     function (event) {
+        document.querySelector(".checker").innerHTML = event.target.tagName + "---><---" + event.target.className;
         if (event.target == modal) {
             modal.style.display = "none";
         }
