@@ -45,13 +45,20 @@ closeBtn.onclick = () => {
     modal.style.display = "none";
 };
 
-window.onclick = (event) => {
+/* window.onclick = (event) => {
     if (event.target == modal) {
         modal.style.display = "none";
       }
 
-};
+}; */
 
+window.addEventListener("click",
+    function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+)
 
 
 
