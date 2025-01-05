@@ -1,4 +1,4 @@
-.references-banner {
+.sales-banner {
     width: 100%;
     background-color: var(--header-navbar-bg-color);
     background-image: url(../../images/banner/dark-grey-banner.jpg);
@@ -11,7 +11,7 @@
     padding: 45px 0;
 }
 
-.references-banner-flex {
+.sales-banner-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +21,7 @@
 
 
 
-.references-banner h1 {
+.sales-banner h1 {
     /* margin-top: 20px; */
     font-size: 5.5rem;
     line-height: 5rem;
@@ -29,7 +29,7 @@
     letter-spacing: .1rem;
 }
 
-.references-banner ul {
+.sales-banner ul {
     color: var(--golden-color);
     font-size: 3rem;
     line-height: 5rem;
@@ -38,27 +38,27 @@
     display: flex;
 }
 
-.references-banner ul a {
+.sales-banner ul a{
     cursor: pointer;
 }
 
 
-.references-banner ul .current::before {
+.sales-banner ul .current::before {
     content: "/";
     padding: 0 10px;
-
+    
 }
 
 
 
-.references-banner-btn-wrapper {
+.sales-banner-btn-wrapper {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-
+    
 }
 
-.references-banner-btn-wrapper a {
+.sales-banner-btn-wrapper a {
     display: inline-flex;
     justify-content: center;
     height: 50px;
@@ -75,32 +75,31 @@
     cursor: pointer;
 }
 
-.references-banner-btn-wrapper a:hover {
+.sales-banner-btn-wrapper a:hover {
     border-radius: 5px;
     background-color: var(--golden-color);
 }
 
 
-.references-main {
+.sales-main {
     width: 100%;
     background-color: #fff;
 }
 
-.references-main section {
+.sales-main section {
     width: 100%;
     padding: 30px 0;
-    
 }
 
 
-
-.references-main-subtitle{
+.sales-main-subtitle{
     display: flex;
     justify-content: center;
 }
 
 
-.references-main h2 {
+
+.sales-main h2 {
     color: black;
     font-size: 2.4rem;
     line-height: 3.2rem;
@@ -112,7 +111,7 @@
 }
 
 
-.references-main h2::before {
+.sales-main h2::before {
 
     content: "";
     top: 50%;
@@ -124,7 +123,7 @@
     background-color: black;
 }
 
-.references-main h2::after {
+.sales-main h2::after {
 
     content: "";
     top: 50%;
@@ -136,16 +135,13 @@
     background-color: black;
 }
 
-.references-main p {
+.sales-main p {
     font-size: 1.6rem;
     line-height: 2rem;
 }
 
 
-/*--------------------------------*/
-
-
-.references-main .gallery {
+.sales-main .gallery {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
@@ -221,28 +217,19 @@
 
 
 
+
+
+
 /*---------------------------------*/
 /*RESPONSIVE DESIGN*/
 /*---------------------------------*/
-/* 
-@media screen and (max-width: 600px) {
-    .thumbnail-container{
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    
-    }
-    .thumbnail{
-        height: 100px;
-    }    
-}
- */
-
 
 @media only screen and (max-width: 900px) {
 
     /*------------------------------*/
     /*---- HERO SECTION ------------*/
 
-    .references-banner {
+    .sales-banner {
         padding: 40px;
         display: flex;
         justify-content: flex-end;
@@ -250,18 +237,18 @@
 
 
 
-    .references-banner h1 {
+    .sales-banner h1 {
         display: inline-flex;
         justify-content: center;
         width: 310px;
-        font-size: 4rem;
+        font-size: 3.6rem;
         line-height: 4rem;
         text-align: center;
     }
 
 
-    .references-banner ul {
-        font-size: 2rem;
+    .sales-banner ul {
+        font-size: 1.9rem;
         line-height: 2.5rem;
     }
 
@@ -269,12 +256,12 @@
 
 
 
-    .references-banner-btn-wrapper {
+    .sales-banner-btn-wrapper {
         margin-top: 20px;
         column-gap: 20px;
     }
 
-    .references-banner-btn-wrapper a {
+    .sales-banner-btn-wrapper a {
         height: 45px;
         font-size: 1.4rem;
     }
@@ -284,23 +271,23 @@
     /*---- MAIN SECTION ------------*/
 
 
-    .references-main {
+    .sales-main {
         width: 100%;
         padding: 30px 0;
     }
 
-    .references section {
+    .sales-main section {
         padding: 0 0;
     }
 
-    .references-main h2 {
+    .sales-main h2 {
 
         font-size: 2.5rem;
         line-height: 3rem;
         padding: 0;
     }
 
-    .references-main h3 {
+    .sales-main h3 {
         font-size: 2rem;
         line-height: 3.2rem;
         font-weight: 500;
@@ -309,7 +296,7 @@
     }
 
 
-    .references-main h3::before {
+    .sales-main h3::before {
 
 
         height: .2rem;
@@ -317,7 +304,7 @@
 
     }
 
-    .references-main h3::after {
+    .sales-main h3::after {
 
 
         height: .2rem;
@@ -325,10 +312,11 @@
 
     }
 
-    .references-main p {
+    .sales-main p {
         font-size: 1.4rem;
         line-height: 2rem;
     }
+
 
 
 
