@@ -46,9 +46,9 @@ closeBtn.onclick = () => {
 };
 
 window.onclick = (event) => {
-
-
-    modalText.innerHTML = "id: " +  event.target;
+    if (event.target == modal) {
+        modal.style.display = "none";
+      }
 
 };
 
